@@ -1,0 +1,14 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<h1>User cookie authentication</h1>
+
+#{if jsonData != null}
+<p>User authenticated ok</p>
+json: <pre>${jsonData}</pre>
+access_token: <pre>${result}</pre>
+#{/if}
+#{else}
+<p>User not authenticated.</p>
+#{/else}
+<a href="/">Back &raquo;</a>
